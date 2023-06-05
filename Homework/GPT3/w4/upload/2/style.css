@@ -1,0 +1,117 @@
+/* Variables */
+:root {
+  --primary-color: #1a8cff;
+  --secondary-color: #3282b8;
+  --light-gray: #f5f5f5;
+  --darkest-gray: #0c0a0a;
+  --gray: #5a5c5e;
+  --lighter-gray: #5d5c5c;
+  --dark-gray: #7e4a35;
+  --red: #cf1b1b;
+  --orange: #f04d22;
+  --pink: #752c53;
+  --violet: #af9ab2;
+}
+
+/* General elements */
+body {
+  background-color: var(--light-gray);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container {
+  margin-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Building Info elements */
+#building-info {
+  margin-top: 40px;
+}
+
+#building-info h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.building-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.building-info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  margin-left: 20px;
+}
+
+.building-info-content p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.building-info-content span {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+/* Chart elements */
+#chart {
+  margin-top: 20px;
+}
+
+.bar {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+.bar:active {
+  opacity: 0.6;
+}
+
+.highlighted {
+  stroke: #333;
+  stroke-width: 2;
+}
+
+.building {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.building:hover {
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.building:active {
+  opacity: 0.6;
+}
+
+.height {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.height:hover {
+  opacity: 0.8;
+}
+
+.height:active {
+  opacity: 0.6;
+}

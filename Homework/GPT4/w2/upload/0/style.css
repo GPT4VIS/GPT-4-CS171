@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  background-color: #f2f2f2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ffffff;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CS171 - HW Week 08</title>
+
+    <!-- CSS libraries -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- * TO-DO * -->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-md-6">
+          <!-- Area chart goes here -->
+          <div id="areachart"></div>
+        </div>
+        <div class="col-md-6">
+          <!-- Bar charts go here -->
+          <div id="ownrent"></div>
+          <div id="electricity"></div>
+          <div id="latrine"></div>
+          <div id="hohreligion"></div>
+        </div>
+      </div>
+    </div>
+    <!-- embedding JS libraries -->
+    <!-- Load JS libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- d3 -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Your implementation -->
+    <script src="js/barchart.js"></script>
+    <script src="js/areachart.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

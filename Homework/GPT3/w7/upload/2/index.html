@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How India Eats (Redesigned)</title>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+	<div id="chart"></div>
+	<script>
+		var data = [
+			{
+				x: ['East', 'West', 'North', 'South'],
+				y: [10, 5, 12, 8],
+				name: 'Rice',
+				type: 'bar'
+			},
+			{
+				x: ['East', 'West', 'North', 'South'],
+				y: [6, 8, 5, 12],
+				name: 'Wheat',
+				type: 'bar'
+			},
+			{
+				x: ['East', 'West', 'North', 'South'],
+				y: [8, 6, 9, 7],
+				name: 'Bread',
+				type: 'bar'
+			}
+		];
+		var layout = {
+			barmode: 'stack',
+			title: 'How India Eats (Redesigned)',
+			xaxis: {title: 'Region'},
+			yaxis: {title: 'Food Consumption'},
+			legend: {
+				x: 1,
+				y: 1
+			}
+		};
+		Plotly.newPlot('chart', data, layout);
+	</script>
+</body>
+</html>

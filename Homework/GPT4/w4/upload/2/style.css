@@ -1,0 +1,45 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  padding-top: 30px;
+}
+
+.name,
+.height {
+  font-size: 12px;
+}
+
+.name {
+  fill: #333;
+}
+
+.height {
+  fill: #fff;
+}
+
+.chart {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  padding-left: 20px;
+}
+
+.info img {
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.info h2 {
+  margin-bottom: 10px;
+}
+
+.info p {
+  margin-bottom: 5px;
+}

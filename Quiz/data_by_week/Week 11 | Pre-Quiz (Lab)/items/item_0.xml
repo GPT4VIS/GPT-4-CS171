@@ -1,0 +1,79 @@
+<item ident="ga204c2aa64d965795af810f901ead986" title="jQuery">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>8732,95957,60944,41634,6097</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;Please select the correct sentences&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="8732">
+                <material>
+                  <mattext texttype="text/plain">jQuery is a special JSON format, such as GeoJSON</mattext>
+                </material>
+              </response_label>
+              <response_label ident="95957">
+                <material>
+                  <mattext texttype="text/plain">jQuery is a JavaScript library</mattext>
+                </material>
+              </response_label>
+              <response_label ident="60944">
+                <material>
+                  <mattext texttype="text/plain">jQuery is a query language for MySQL databases</mattext>
+                </material>
+              </response_label>
+              <response_label ident="41634">
+                <material>
+                  <mattext texttype="text/plain">jQuery is a built-in library in every major browser. You don’t have to do anything to use the library.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6097">
+                <material>
+                  <mattext texttype="text/plain">To use jQuery, you have to include it in your project or you have to refer to a hosted jQuery library</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">8732</varequal>
+                </not>
+                <varequal respident="response1">95957</varequal>
+                <not>
+                  <varequal respident="response1">60944</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">41634</varequal>
+                </not>
+                <varequal respident="response1">6097</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

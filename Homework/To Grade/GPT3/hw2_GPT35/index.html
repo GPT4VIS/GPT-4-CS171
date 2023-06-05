@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CS171 Homework 2</title>
+    <!-- Load CSS libraries -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1 class="text-center my-5">Global Hunger Index</h1>
+    <div class="container">
+      <table class="table table-hover sortable">
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>1990</th>
+            <th>2000</th>
+            <th>2014</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Central African Republic</th>
+            <td>51.9</td>
+            <td>51.4</td>
+            <td>46.9</td>
+          </tr>
+          <tr>
+            <th scope="row">Chad</th>
+            <td>65</td>
+            <td>52</td>
+            <td>46.4</td>
+          </tr>
+          <tr>
+            <th scope="row">Haiti</th>
+            <td>52.1</td>
+            <td>42.8</td>
+            <td>37.3</td>
+          </tr>
+          <tr>
+            <th scope="row">Madagascar</th>
+            <td>44.8</td>
+            <td>44.1</td>
+            <td>36.3</td>
+          </tr>
+          <tr>
+            <th scope="row">Sierra Leone</th>
+            <td>58.8</td>
+            <td>53.5</td>
+            <td>38.9</td>
+          </tr>
+          <tr>
+            <th scope="row">East Timor</th>
+            <td>—</td>
+            <td>—</td>
+            <td>40.7</td>
+          </tr>
+          <tr>
+            <th scope="row">Zambia</th>
+            <td>47</td>
+            <td>50.9</td>
+            <td>41.1</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="cs171-hw2-infographic.png" alt="Top 10 Salaries at Google" />
+        </div>
+        <div class="col-md-6">
+          <h2>Analysis of Top 10 Salaries at Google Infographic</h2>
+          <p>
+            <strong>Who is the audience?</strong><br />
+            The audience appears to be job seekers interested in working at Google,
+            as the infographic answers the question "What does it take to get a job at Google?"
+          </p>
+          <p>
+            <strong>What questions does it answer?</strong><br />
+            The infographic answers questions about the top 10 highest paying jobs at Google,
+            the qualification requirements for these jobs, and the typical salaries for each job.
+          </p>
+          <p>
+            <strong>What is the data? be specific, including data types (N,O,Q).</strong><br />
+            The data includes 10 job positions at Google, their minimum experience or education
+            requirements (O), and their median and senior salaries (Q).
+          </p>
+          <p>
+            <strong>
+              For each data type, how is it visually encoded?
+            </strong><br />
+            The minimum requirements are encoded using bar charts showing the number of years of
+            work experience or the level of education required. The median and senior salaries for
+            each job are encoded using dollar amounts with color coding to differentiate between
+            the two types of salaries and to highlight the highest paying jobs.
+          </p>
+          <p>
+            <strong>Do you consider this to be a 'good' visualization? Why or why not?</strong><br />
+            I consider this to be a good visualization because it effectively answers the
+            questions posed by its audience. The use of bar charts with color coding allows for
+            easy comparison between different job positions, and the high contrast colors make
+            it easy to identify the highest paying jobs. The use of dollar amounts to show salaries
+            makes it easy for the audience to understand the relative pay differences between different jobs.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/sorttable.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

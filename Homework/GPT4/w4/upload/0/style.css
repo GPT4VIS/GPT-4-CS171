@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.name,
+.height {
+  font-size: 12px;
+}
+
+.name {
+  fill: #333;
+}
+
+.height {
+  fill: #fff;
+}

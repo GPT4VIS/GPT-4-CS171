@@ -1,0 +1,14 @@
+body {
+  font-family: Arial, sans-serif;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+th {
+  font-weight: bold;
+  background-color: #e6e6e6;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

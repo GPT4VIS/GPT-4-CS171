@@ -1,0 +1,64 @@
+<item ident="g1b40b956a410e116de4fc7e7130f8f29" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>2701,2394,8826,426</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g1d94d90efa0450cb87d374e73f3cf395</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;These two pie charts show the difference in smoking habits between boys and girls:&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/c-g05-4-6-eng.png" alt="c-g05-4-6-eng.png"&gt;&lt;/p&gt;
+&lt;p&gt;Instead of using two pie charts, a better choice for making &lt;strong&gt;the most accurate&lt;/strong&gt; comparisons between categories for each gender would have been:&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2701">
+                <material>
+                  <mattext texttype="text/plain">A stacked bar graph.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2394">
+                <material>
+                  <mattext texttype="text/plain">A line chart.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8826">
+                <material>
+                  <mattext texttype="text/plain">A paired column bar graph.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="426">
+                <material>
+                  <mattext texttype="text/plain">A stacked area chart.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8826</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

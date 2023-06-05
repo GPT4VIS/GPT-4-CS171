@@ -1,0 +1,35 @@
+body {
+    background-color: #FFFEE9;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.area {
+    fill: #963A2F;
+}
+
+.bar-label {
+    font-size: 11px;
+}
+
+.tool-tip {
+    stroke: black;
+}
+
+.tool-date {
+    font-size: 11px;
+    stroke: black;
+}
+
+.tool-population {
+    stroke: black;
+}
+
+.graph-title {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 60px;
+}

@@ -1,0 +1,15 @@
+.table {
+    width: 50%;
+}
+
+h1{
+    font-family: Georgia;
+    color: blue;
+    text-decoration: purple wavy underline;
+    font-size: 75px;
+}
+
+img {
+    width: 100%;
+    height: 60%;
+}

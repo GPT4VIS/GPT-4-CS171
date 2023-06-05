@@ -1,0 +1,91 @@
+img {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.generated-content {
+    font-size: 15px;
+    padding: 20px 10px;
+    background-color: #F7F7F7;
+    color: black;
+    border: 2px solid red;
+}
+
+.header {
+    font-size: 20px;
+    padding: 10px 10px;
+    background-color: #F7F7F7;
+    color: seagreen;
+    margin-top: 20px;
+}
+
+#content {
+    font-size: 15px;
+    padding: 10px 10px;
+    background-color: #F7F7F7;
+    color: black;
+    border: 2px solid gray;
+    margin-top: 2px;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 10px 10px;
+    background-color: #F7F7F7;
+    color: black;
+    border: 2px solid blue;
+    margin: 20px;
+}
+
+#cs171-basics:hover {
+    font-size: 15px;
+    padding: 10px 10px;
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+}
+
+.btn-primary {
+    font-size: 15px;
+    padding: 10px 10px;
+    background-color: #F7F7F7;
+    color: black;
+    border: 2px solid red;
+}
+
+#carouselExampleControls {
+    margin-top: 20px;
+}
+
+#footer {
+    background-color: rgba(0, 100, 255, 0.5);
+    color: black;
+    margin-top: 40px;
+
+}
+
+.headline {
+    font-family: Arial;
+    color: navy;
+}
+
+.sub_headline {
+    font-family: Arial;
+    color: black;
+}
+
+.justify-content-center {
+    text-align: center;
+}
+
+/* Solid border */
+hr.solid {
+    width: 95%;
+    color: black;
+    border-color: black;
+    margin: auto;
+    size: 5px;
+}

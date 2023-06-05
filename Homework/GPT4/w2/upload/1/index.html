@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Hunger Index</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8 text-center">
+          <h1>Global Hunger Index</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <table class="table table-bordered sortable">
+            <!-- Table Head -->
+            <thead>
+              <tr>
+                <th>Country</th>
+                <th>1990</th>
+                <th>2000</th>
+                <th>2014</th>
+              </tr>
+            </thead>
+            <!-- Table Body -->
+            <tbody>
+              <tr>
+                <td>Central African Republic</td>
+                <td>51.9</td>
+                <td>51.4</td>
+                <td>46.9</td>
+              </tr>
+              <tr>
+                <td>Chad</td>
+                <td>65</td>
+                <td>52</td>
+                <td>46.4</td>
+              </tr>
+              <tr>
+                <td>Haiti</td>
+                <td>52.1</td>
+                <td>42.8</td>
+                <td>37.3</td>
+              </tr>
+              <tr>
+                <td>Madagascar</td>
+                <td>44.8</td>
+                <td>44.1</td>
+                <td>36.3</td>
+              </tr>
+              <tr>
+                <td>Sierra Leone</td>
+                <td>58.8</td>
+                <td>53.5</td>
+                <td>38.9</td>
+              </tr>
+              <tr>
+                <td>East Timor</td>
+                <td>—</td>
+                <td>—</td>
+                <td>40.7</td>
+              </tr>
+              <tr>
+                <td>Zambia</td>
+                <td>47</td>
+                <td>50.9</td>
+                <td>41.1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <!-- Infographic goes here -->
+          <img
+            src="cs171-hw2-infographic.png"
+            alt="Top 10 Salaries at Google Infographic"
+          />
+        </div>
+        <div class="col-6">
+          <!-- Design Critique goes here -->
+          <h2>Design Critique</h2>
+          <p>
+            <strong>Audience:</strong> Job seekers and general public interested
+            in salaries at Google.
+          </p>
+          <p>
+            <strong>Questions it answers:</strong> What are the top 10
+            highest-paying positions at Google? What are their respective salary
+            ranges?
+          </p>
+          <p>
+            <strong>Data:</strong> Job titles (Ordinal), Salary ranges
+            (Quantitative).
+          </p>
+          <p><strong>Visual encoding:</strong></p>
+          <ul>
+            <li>Job titles: Text labels</li>
+            <li>
+              Salary ranges: Horizontal bars with values shown within bars
+            </li>
+          </ul>
+          <p>
+            <strong>Good visualization?</strong> Yes, it effectively conveys the
+            information about the top 10 highest-paying positions and their
+            salary ranges at Google. The horizontal bars make it easy to compare
+            the salary ranges across different positions. However, the
+            visualization could be improved by adding more context, such as
+            industry averages or company-wide salary averages for comparison.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Sorttable JS -->
+    <script src="js/sorttable.js"></script>
+  </body>
+</html>

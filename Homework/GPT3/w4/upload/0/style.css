@@ -1,0 +1,25 @@
+body {
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+svg {
+  margin-top: 40px;
+}
+
+#building-info {
+  margin-top: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+}
+
+#building-info img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,66 @@
+/* Styles for the area chart and bar charts */
+
+.chart {
+    font: 10px sans-serif;
+  }
+  
+  .area {
+    fill: #ccc;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  
+  .axis line,
+  .axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  
+  .x-axis path,
+  .x-axis line {
+    fill: none;
+    stroke-width: 1;
+  }
+  
+  .y-axis path,
+  .y-axis line {
+    fill: none;
+    stroke-width: 1;
+  }
+  
+  .y-axis text {
+    font-size: 14px;
+  }
+  
+  .bar {
+    fill: steelblue;
+  }
+  
+  .bar:hover {
+    fill: brown;
+  }
+  
+  .label {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .brush .selection {
+    fill: #666;
+    fill-opacity: 0.8;
+  }
+  
+  .container-fluid {
+    max-width: 1200px;
+  }
+  
+  .areachart-container,
+  .barchart-container {
+    margin-bottom: 20px;
+  }

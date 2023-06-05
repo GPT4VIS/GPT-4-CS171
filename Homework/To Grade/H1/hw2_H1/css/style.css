@@ -1,0 +1,17 @@
+body {
+  background-color: #494d5f
+}
+
+p {
+  font-family: "Roboto";
+  color: white;
+}
+
+caption {
+  font-style: italic;
+  font-family: "Roboto";
+}
+
+h1 {
+  color: white;
+}

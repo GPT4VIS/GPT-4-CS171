@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.area-chart,
+.bar-chart {
+  flex-basis: 45%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.area {
+  fill: steelblue;
+}
+
+.tooltip-line {
+  stroke: black;
+}
+
+.tooltip-text {
+  font-size: 12px;
+  fill: black;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-size: 12px;
+  fill: black;
+}
+
+text {
+  font-size: 14px;
+}

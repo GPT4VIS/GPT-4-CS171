@@ -1,0 +1,62 @@
+<item ident="gb6fd3594d00e79c77d7b3605fc8ea6e7" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>9067,8744,9136,9134</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gfe99f7a460c2007e8854f0f01b4de8c8</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;According to some practitioners, pie charts are acceptable when:&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="9067">
+                <material>
+                  <mattext texttype="text/plain">You need to compare many pie charts.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8744">
+                <material>
+                  <mattext texttype="text/plain">The pie chart has very few slices.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9136">
+                <material>
+                  <mattext texttype="text/plain">Categories, or slices, are very different in size.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9134">
+                <material>
+                  <mattext texttype="text/plain">Categories, or slices, are very close in size.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8744</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

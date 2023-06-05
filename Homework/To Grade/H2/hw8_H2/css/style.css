@@ -1,0 +1,62 @@
+
+/* ADD YOUR STYLES HERE */
+
+h3{
+    font-size: 15pt;
+    font-weight: bold;
+    color: #dadada;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f2f2;
+    color: #050505;
+    text-align: center;
+    padding:2%;
+}
+
+.container{
+    height: 95vh;
+}
+
+.align-self-center{
+    height: 90vh;
+    width: 90vw;
+}
+
+.title {
+    height: 15vh;
+}
+
+.barlabel{
+    fill: #050505;
+    stroke: none;
+}
+
+#barcol{
+    height: 70vh;
+    width: 50vw;
+}
+
+#bar0, #bar2, #bar3, #bar1{
+    height: 15vh;
+    width: 50vw;
+    margin-bottom: 10pt;
+    color: #100f0f;
+}
+
+#histogram-chart{
+    height: 65vh;
+    width: 45vw;
+    margin-top: 25pt;
+}
+
+.axis {
+    font-size: 10pt;
+}
+
+.vistitle{
+    fill: #050505;
+    stroke: none;
+    font-size: 16pt;
+}

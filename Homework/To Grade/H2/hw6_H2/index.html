@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS171 - HW 6</title>
+
+    <!-- CSS LIBRARIES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.4.0/nouislider.css" integrity="sha512-DGB74Gyw93qON+V0QxSRs1er6sqoPyFoy23HBL5LN7MRJBcjeCU22zega+vOEGE0XQLoVrv4ExcaesSTwZQA2w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- YOUR CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col">
+            <h1>FIFA World Cup<sup>TM</sup> <span id="dateRange"></span></h1>
+            <h2>All Time Statistics</h2>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-7">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label form="variable-type" id="selector-label">Choose Data </label>
+                        <select class="form-control" id="selected-data">
+                            <option label = "Goals" value="GOALS">Goals</option>
+                            <option label = "Average Goals" value="AVERAGE_GOALS">Average Goals</option>
+                            <option label = "Matches" value="MATCHES">Matches</option>
+                            <option label = "Teams" value="TEAMS">Teams</option>
+                            <option label = "Average Attendance" value="AVERAGE_ATTENDANCE">Average Attendance</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="col-5">
+                <div id="slider"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <div id="chart-area"></div>
+        </div>
+        <div class="col-5" id="summary-area">
+            <table class="table" id="summary-table">
+                <th id="edition" class="info-cell h5" colspan="2"></th>
+                <tr><th class="header-cell">Winner</th><th class="header-cell " id="winner"></th></tr>
+                <tr><th>Goals:</th><th id="goals" class="info-cell"></th></tr>
+                <tr><th>Average Goals:</th><th id="avg-goals" ></th></tr>
+                <tr><th>Matches:</th><th id="matches" ></th></tr>
+                <tr><th>Teams:</th><th id="teams" ></th></tr>
+                <tr><th>Average Attendance:</th><th id="attendance"></th></tr>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+
+<!-- embedding JS libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.4.0/nouislider.min.js"
+        integrity="sha512-mZXUH8DAODwCHioWP3gltQwa953LbABMlzTYwYkKqv8eNxOk37B1HgNNuCMfFxgrpW5C34WJbxPDcM58+s1dJA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- d3 -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<!-- Your implementation -->
+<script src="js/main.js"></script>
+<!--<script src="./js/nouislider.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> HW2 </title>
+    <!-- Boostrap and CSS style sheet ref -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 class="text-center"> Global Hunger Index </h1>
+    <div class="d-flex justify-content-center" id="GHI">
+        <table class="table table-secondary table-striped sortable">
+            <thead>
+            <tr class="table-info">
+                <th scope="col">Country</th>
+                <th scope="col">1990</th>
+                <th scope="col">2000</th>
+                <th scope="col">2014</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Central African Republic</th>
+                <td>51.9</td>
+                <td>51.4</td>
+                <td class="table-danger">46.9</td>
+            </tr>
+            <tr>
+                <th scope="row">Chad</th>
+                <td class="table-danger">65</td>
+                <td>52</td>
+                <td>46.6</td>
+            </tr>
+            <tr>
+                <th scope="row">Haiti</th>
+                <td>52.1</td>
+                <td class="table-success">42.8</td>
+                <td>37.3</td>
+            </tr>
+            <tr>
+                <th scope="row">Madagascar</th>
+                <td class="table-success">44.8</td>
+                <td>44.1</td>
+                <td class="table-success">36.3</td>
+            </tr>
+            <tr>
+                <th scope="row">Sierra Leone</th>
+                <td>58.5</td>
+                <td class="table-danger">53.5</td>
+                <td>38.9</td>
+            </tr>
+            <tr>
+                <th scope="row">East Timor</th>
+                <td>–</td>
+                <td>–</td>
+                <td>40.7</td>
+            </tr>
+            <tr>
+                <th scope="row">Zambia</th>
+                <td>47</td>
+                <td>50.9</td>
+                <td>41.1</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="google.png">
+            </div>
+            <div class="col">
+                <h3>Audience</h3>
+                <p>
+                    The intended audience for this visualization would be the general public, with a focus on those who understand the (tech) corporate environment. The usage of labels such as "product management" and "staff user experience designer" imply that the audience must know these terms to relate the data, but it is not imperative to the understanding of the visualization to know them. Presumably, however, the tech / corporate understanding audience is interested in Google salaries, perhaps as point of comparison, desire to work at Google, or pure curiousity about the pay at one of the leading tech giants.
+                </p>
+                <h3> Questions </h3>
+                <p>
+                    This visualization answers the questions:
+                    <ul>
+                        <li> How much do Google employees make? </li>
+                        <li> Who are the highest earners at Google? What are their roles? </li>
+                        <li> What is the salary range for top earners at Google? </li>
+                        <li> What role makes the most amount of money at Google? </li>
+                    </ul>
+                </p>
+                <h3> Data </h3>
+                <p>
+                    There are only a few types of data in this visualization. First, the occupation names, which are categorical. They are types of jobs that can only be the same as another title or not. The second type of data is that these occupations seemed to be numbered 1-8 (in order of highest to lowest salaries by the higher value in the range). Thus, due to this ordering, it is ordinal data. 1 is the highest earner, which is greater than 2, and so on. The third are the salary ranges, and these are quantitative. They are quantitative, and not ordinal, because while yes we can compare them with greater than or less than operators, we can also perform arithmetic on them. For example, we can find mean salaries within the ranges, average salary ranges, the largest range of salaries by subtracting, and so on. There also seems to be a fourth type of data, which is one vs. two salaries (which I cannot quite make sense of, but more on that in the next question), which would be ordinal data, as it can be compared (2 salaries is greater than 1), but there is no real other operator to be performed. The last bit of data are benchmarks for the pie chart (143k, 157.75k, 172.5k, etc), which would also be quantitative, as operators can be performed on them. For example, we can subtract two of them to get an understanding of some fraction of the total range of the top 10 salaries.
+                </p>
+                <br>
+                <p>
+                    The occupation names are written in text. They are accompanied by their rank, which are placed right next to a person icon. These people icons are color-coded to highlight the differences across occupations. The salary ranges are represented with text (numbered text) right under the occupation names. They are also represented by shares of a pie, where the pie ranges from 143k - 241k. These pie shares are color-coded along with the same color of the icons next to the occupation text, and their shares are accurate portions in the right section of the total range. The one vs. two salary data points are represented by text "two salaries" under those with two salaries, but also by the people icons. For the "one salary", there is only one person icon, and for the "two salaries", there are two smaller people icons side-by-side in the same color. The benchmarking data is represented with text in little icons at their relative locations along the pie chart.
+                </p>
+                <h3> Design Critique </h3>
+                <p>
+                    I do not think this is a good visualization for this type of data. The text itself answers the questions I highlighted earlier after looking at the visualization for quite a while, but it takes one a while to read all the text and interpret the pie chart. Additionally, a better formatted visualization could answer more questions, in addition to those above, such as the relative salary ranges, the number of people in that role, and so on. I would suggest a box plot/bar type chart, with the y-axis ranging from 143-241k, the x-axis being the occupation name, and the ranges being represented by "boxes" ranging from their appropriate numbers on the y-axis. Or the bar chart could be normalized and start at 0 and reach the average salary or the higher point to fit a classic bar chart. In this way, one does not need to decipher the relative sizes of the slices of the pie to try and determine how these ranges compare or decipher what the benchmark data actually represented. There is also a dashed circle outside of the main pie chart, and I am still not quite sure what purpose that serves. Perhaps to separate the benchmarks? Again, it is unnecessary and confusing. Additionally, it is still not clear to me what "two salaries" means, and why the text shows only one salary, but the size of the pie chart is doubled. Presumably, there are more than 2 senior managers at all of Google? Or maybe this would represent one team at Google, and there are always 2 senior managers per team? Either way, I am still not able to figure out what these meant. Though, I did think the color coding was a good idea in this form of a visualization to see the differences. Additionally, I think having the concentric slices made it easier to see the colors, but it took me a second to understand why some arbitrarily had a smaller radius than others. Ranking the occupations, however, I think worked well. When looking at the text of salary ranges that overlap, it can be difficult to recognize who generally makes more, so it was helpful that they were ordered counterclockwise in descending salary range, but also the numbers served as an extra visualization to solidify that without having to read and compare every single number in my head. Lastly, I think the color-coded lines from the icons of the occupations to the chart were helpful to find the salary ranges, but the text "salary range" on every one is redundant, and these lines would not be necessary in a different type of chart. In conclusion, while the audience would be able to find the information they sought in this chart, it is confusing and would take them a while to understand the message. It is not the worst design, however. The only part that is actively misleading is the "two salaries" part, but otherwise it does answer some questions about the top earners at Google accurately (though not effectively or efficiently).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/sorttable.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

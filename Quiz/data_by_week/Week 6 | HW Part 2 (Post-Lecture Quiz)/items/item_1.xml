@@ -1,0 +1,62 @@
+<item ident="g38a5ff40a7538b550d9988cbebe84c28" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>8679,4845,3765,8736</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gbceb7ec632fe8d96e2579517c0edb4f7</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;In Tableau, the process of adding dimensions to the view to increase the number of marks is known as setting the:&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="8679">
+                <material>
+                  <mattext texttype="text/plain">Aggregation</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4845">
+                <material>
+                  <mattext texttype="text/plain">Disaggregation</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3765">
+                <material>
+                  <mattext texttype="text/plain">Level of Detail</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8736">
+                <material>
+                  <mattext texttype="text/plain">Level of Summary</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">3765</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

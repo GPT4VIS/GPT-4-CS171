@@ -1,0 +1,28 @@
+/* ADD YOUR STYLES HERE */
+.container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.row-cols-md-2 {
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: orange;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alternative Visualization: How India Eats</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <div id="plot" style="width:100%; height:600px;"></div>
+  <script>
+    // Data
+    var data = [
+      {
+        values: [45, 30, 15, 10],
+        labels: ['Vegetarian', 'Lacto-Vegetarian', 'Ovo-Lacto Vegetarian', 'Vegan'],
+        marker: {
+          colors: ['#1d91c0', '#5ca3d0', '#92b8df', '#c0ddf0'],
+        },
+        hoverinfo: 'label+percent',
+        type: 'pie',
+      },
+    ];
+
+    // Layout
+    var layout = {
+      showlegend: true,
+      legend: {
+        x: 1,
+        xanchor: 'right',
+        fontsize: 14,
+      },
+      title: {
+        text: 'How India Eats: An Improved Visualization<br><span style="font-size: 12px;">Source: http://viz.wtf/image/162284459410</span>',
+        font: {
+          size: 18,
+        },
+      },
+      annotations: [
+        {
+          text: 'How people in India are eating',
+          showarrow: false,
+          xref: 'paper',
+          yref: 'paper',
+          x: 0, // x-document coordinate
+          y: 0, // y-document coordinate
+        },
+      ],
+    };
+
+    // Plot
+    Plotly.newPlot('plot', data, layout);
+  </script>
+</body>
+</html>

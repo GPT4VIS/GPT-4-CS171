@@ -1,0 +1,38 @@
+
+body{
+    background-color: rgb(233, 226, 218);
+    /* font-size: small; */
+}
+
+.header {
+    background-image: url("../img/zaatari-camp.jpg");
+    background-size: cover;
+    height: 20vh;
+    text-align: center;
+    color: white;
+}
+
+/* font size for titles and labels */
+/* axis labels */
+
+.graph-title {
+    font-size: 20px;
+}
+
+.pop-tooltip {
+    font-size: small;
+}
+
+.date-tooltip {
+    color:gray;
+    font-size: small;
+}
+
+.barLabel {
+    font-size: small;
+}
+
+.axis-label {
+    font-size: small;
+    color: gray;
+}

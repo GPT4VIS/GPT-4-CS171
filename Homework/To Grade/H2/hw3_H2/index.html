@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CS171 - HW2</title>
+
+		<!-- Load CSS libraries -->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+		<!-- own CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	<h2>
+		Pizza World Delivery Data Analysis Dashboard 2016 - Present
+	</h2>
+	<!-- ********************** ADD YOUR HTML-ELEMENTS HERE *********************** -->	
+	<!-- Make sure to use proper bootstrap! -->
+
+	<!-- area select -->
+	<label id="label", for="choose-area"> Select the pizza delivery area </label>
+	<select id="choose-area" onchange ="createVisualization()">
+		<option value="all">All locations</option>
+		<option value="Cambridge">Cambridge</option>
+		<option value="Somerville">Somerville</option>
+		<option value="Boston">Boston</option>
+	</select>
+
+	<!-- time select -->
+	<label for = "choose-order">Select the order type</label>
+	<select id= "choose-order" onchange="createVisualization()">
+		<option value="all">All orders</option>
+		<option value="phone">Order by phone</option>
+		<option value="web">Order by website</option>
+	</select>
+
+	<!-- You will need a div-container with the id: 'chart-area' -->
+	<div id = "chart-area"></div>
+
+	<div id="deliveryanalysis">
+		<p id="tot-delivery"></p>
+		<p id="tot-pizzas"></p>
+		<p id="avgtime"></p>
+		<p id="tot-sales"></p>
+	</div>
+
+	<div id="feedbackanalysis">
+		<p id="tot-feedback"></p>
+		<p id="tot-low"></p>
+		<p id="tot-medium"></p>
+		<p id="tot-high"></p>
+	</div>
+
+	<!-- embedding JS libraries -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+	<!-- d3 -->
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+
+	<!-- data -->
+	<script src="data/delivery-data.js"></script>
+	<script src="data/feedback-data.js"></script>
+
+	<!-- bar chart -->
+	<script src="js/barchart.js"></script>
+
+	<!-- tooltip -->
+	<div id="tooltip" class="hidden">
+		<p><strong>Deliveries</strong></p>
+		<p><span id="value"></span></p>
+	</div>
+
+	<!-- ****** TODO: FILTER DATA, DISPLAY BAR CHART & KEY FIGURES ****** -->
+	<script src="js/main.js"></script>
+	</body>
+</html>

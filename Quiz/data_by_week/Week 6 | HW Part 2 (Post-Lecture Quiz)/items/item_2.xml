@@ -1,0 +1,63 @@
+<item ident="gef54e6790a3d9f64f8f9c7cc2731e10d" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>5490,6056,4307,7719</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g5caf0bda1e212b1c1528074f593a1108</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;The following visualization seems to imply that &lt;span&gt;consuming ice cream causes shark attacks. &lt;/span&gt;&lt;span&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/SharksAndIceCream.jpg" alt="SharksAndIceCream.jpg" width="406" height="294"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;However, the more likely explanation is that more people consume ice cream and get in the ocean when it’s warmer outside. This is an example of the statistics mantra:&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="5490">
+                <material>
+                  <mattext texttype="text/plain">causation does not imply correlation</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6056">
+                <material>
+                  <mattext texttype="text/plain">correlation does not imply causation</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4307">
+                <material>
+                  <mattext texttype="text/plain">causation implies correlation</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7719">
+                <material>
+                  <mattext texttype="text/plain">correlation implies causation</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">6056</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

@@ -1,0 +1,67 @@
+<item ident="g9638aaa28bb3e8dd4f18c3b3832fc993" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>9815,4588,2977,1318,9907</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g475bc9fd6f750a052e49b84d78c92c4b</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;If your Tableau scatter plot only shows one mark, you can break it down into multiple marks by:&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="9815">
+                <material>
+                  <mattext texttype="text/plain">Dragging a measure to Color</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4588">
+                <material>
+                  <mattext texttype="text/plain">Dragging a dimension to Color</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2977">
+                <material>
+                  <mattext texttype="text/plain">Dragging a measure to Tooltip</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1318">
+                <material>
+                  <mattext texttype="text/plain">Dragging a dimension to Tooltip</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9907">
+                <material>
+                  <mattext texttype="text/plain">Dragging a measure to Detail</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">4588</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>
